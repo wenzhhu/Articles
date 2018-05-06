@@ -15,7 +15,7 @@
 - 书名（title）是一个字符串
 - 版本号 （version）是一个自然数
 相应的Java类定义如下
-```
+```Java
 public class Book {
     private final long id;
     private final String title;
