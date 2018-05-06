@@ -37,7 +37,7 @@ public class Book {
 1. Java类型
 
 在传统的库（Library）或工具软件（Utiilty）的测试中，实际返回值一般都是Java类型。典型的例子有JDK自带的IO库，Math库等等。Java类型可以被分为基本类型（Primitive Type）和组合类型（Composite Type）。基本类型的相等性检查很简单，在Java中通过操作符“=”实现。这里的我们需要着重探讨的是组合类型，也就是Java中的类（Class）。本文中的图书对象就是一个Java类。比如《Effective Java 第二版》就可以表示为
- ```
+ ```Java
 new Book(123, "Effective Java", 2) // 123是一个随机生成的，全局唯一的图书号
 ```
 组合类型的相等性检查在Java中一般通过equals() 方法实现。
@@ -47,7 +47,7 @@ new Book(123, "Effective Java", 2) // 123是一个随机生成的，全局唯一
 在Web Service的测试中，实际返回值一般由HTTP的body部分表示。它代表了我们所关心的实际返回值对象的序列化的形式。典型的例子有RESTful API中常用的JSON或XML表示形式。同样用《Effective Java 第二版》举例：
 - JSON
 
-```
+```Json
 {
   "id" : 123,
   "title" : "Effective Java",
@@ -55,7 +55,7 @@ new Book(123, "Effective Java", 2) // 123是一个随机生成的，全局唯一
 }
 ```
 - XML
-```
+```XML
 <Book>
   <id>123</id>
   <title>Effective Java</title>
